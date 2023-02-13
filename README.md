@@ -623,11 +623,11 @@ if ($var1 > 1)
 
 
 <a name="psr4"></a>
-### `php artisan check:psr4`
+### `php artisan check:psr4 {--nofix} {--force} {--no-ref-fix} {--force-ref-fix} {--folder=app/Models}`
 
 - It checks for all the psr4 autoloads defined in the composer.json file and goes through all the classes to have the right namespace, according to PSR-4 standard.
-- It automatically corrects namespaces (according to PSR-4 rules)
-- It also checks for references to the old namespace with the system and replaces them with the new one.
+- It automatically corrects namespace of classes. (according to PSR-4 rules)
+- It also checks for references to the old namespace in the project and replaces them with the new one.
 
 
 <a name="generate"></a>
