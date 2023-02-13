@@ -643,13 +643,13 @@ If you create an empty `.php` file which ends with `ServiceProvider.php` after r
 
 <a name="imports"></a>
 
-### `php artisan check:imports`
+#### `php artisan check:imports {--folder=app/Models} {--file=SomeFile.php}`
 
 
 - It checks all the imports (`use` statements) to be valid and reports invalid ones.
 - It auto-corrects some of the references, it no ambiguity is around the class name.
-- It can understand the laravel aliased classes so `use Request;` would be valid.
-
+- It can understand the laravel aliased classes, so for e.g. `use Request;` would be valid.
+- You can use `--folder=` or `--file=` option to narrow down the scanned folders.
 
 <a name="bad_practices"></a>
 
